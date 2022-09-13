@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>新しいタブ</title>
+        <meta charset="utf-8">
+        <style>
+            .container::-webkit-scrollbar {
+                display: none; /*Google Chrome、Safari、Microsoft Edge対応のスクロールバー非表示コード*/
+            }
+            body{
+                margin: 0;
+                overflow: hidden;
+                background-size: cover;
+                background-position: center
+            }
+            li{
+                margin: 0 5px;
+                padding: 3px;
+                display: flex;
+                background-color:rgba(255,255,255,0.5);
+                border-radius: 0.5rem;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            #header{
+                background-color: rgba(0,0,0,0);
+                overflow-x: auto;
+                height: 150%;
+                position: fixed;
+                z-index: 100;
+                width: 100%;
+            }
+            #bookmark{
+                display: flex;
+                list-style: none;
+                padding: 4px;
+                /* background-color: aqua; */
+                margin: 0;
+            }
+            #change{
+                background-color: rgba(255,255,255,0.5);
+                border-radius: 13px;
+                border: none;
+                position: absolute;
+                z-index: 200;
+                bottom: 0;
+                right: 0;
+            }
+        </style>
+    </head>
+    <body style="background-image: url()">
+        <div id="header">
+            <ul id="bookmark">
+            </ul>
+        </div>
+        <button id="change">変更</button>
+        <script src="newTab.js"></script>
+    </body>
+</html>
+
+<!-- <a href=" ${} " style="width: 100px;">
+    <img src="http://www.google.com/s2/favicons?domain= &{ } " alt=" &{ } ">
+    <p> &{ } </p>
+</a> -->
